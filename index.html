@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakerBot - Early Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-dark: #b8972e;
+            --black: #0f0f0f;
+            --dark-gray: #1a1a1a;
+            --light-gray: #333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: var(--black);
+            border-bottom: 1px solid var(--gold);
+        }
+
+        h1 {
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1a1a1a, var(--black)),
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a1a1a"/><path d="M0,50 L50,0 L100,50 L50,100 Z" fill="%23d4af37" opacity="0.05"/></svg>');
+            background-size: cover;
+            color: white;
+        }
+
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--gold), var(--gold-dark));
+            color: black;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 60px;
+            color: var(--gold);
+        }
+
+        .benefits, .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .benefit, .step {
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit:hover, .step:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+        }
+
+        .benefit h3, .step h3 {
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, var(--dark-gray), var(--black));
+        }
+
+        .closing {
+            text-align: center;
+            font-style: italic;
+            font-size: 2em;
+            margin: 80px 0;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--black);
+            color: #888;
+            border-top: 1px solid #333;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2.8em; }
+            .hero { padding: 80px 20px; }
+            .section { padding: 70px 0; }
+            h1 { font-size: 2.3em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>SpeakerBot</h1>
+            <p style="color:#888; margin-top:8px; letter-spacing:1px;">Early Access • Founder's Circle</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Get Booked While You Sleep</h2>
+            <p>If we offered to find perfectly matched opportunities and pitch you for paid speaking gigs every single day — in your exact voice — without you lifting a finger… would you say no?</p>
+            <a href="#waitlist" class="btn">Claim Your Founder's Spot</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Why Founders Are Joining Now</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>First Access to Gigs</h3>
+                    <p>Be the first to see and apply to high-value, category-matched speaking opportunities before anyone else.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Lifetime Founder's Pricing</h3>
+                    <p>Lock in the lowest rate we'll ever offer — guaranteed for life. Never pay more, no matter how big we grow.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Shape the Future</h3>
+                    <p>Get priority access to new AI features and direct influence on the roadmap of your digital agent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #111;">
+        <div class="container">
+            <h2>How Your Digital Agent Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Build Your STAiGENT Twin</h3>
+                    <p>We analyze your voice, tone, style, and media to create a perfect digital version of you that pitches exactly like you do.</p>
+                </div>
+                <div class="step">
+                    <h3>Auto-Match & Apply</h3>
+                    <p>Every day, your agent finds new gigs that fit your topics and automatically tailors applications in your voice.</p>
+                </div>
+                <div class="step">
+                    <h3>Get Booked</h3>
+                    <p>Personalized pitches + automated follow-ups = more yeses. You just show up and speak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="waitlist">
+        <div class="container">
+            <h2 style="font-size:3.5em; margin-bottom:30px;">Secure Your Lifetime Access</h2>
+            <p style="font-size:1.4em; max-width:800px; margin:0 auto 40px;">Only a limited number of Founder's spots available at this rate.</p>
+            <a href="#" class="btn" style="font-size:1.5em; padding:22px 50px;">Join the Waitlist Now</a>
+        </div>
+    </section>
+
+    <div class="closing">
+        <div class="container">
+            <p>You'd have to be crazy to keep chasing gigs the old way.</p>
+            <a href="#" class="btn" style="font-size:1.4em; padding:20px 45px;">Get My Agent Working Today</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SpeakerBot • Digital Speaker Agent. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
